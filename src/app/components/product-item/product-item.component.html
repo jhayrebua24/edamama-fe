@@ -1,0 +1,15 @@
+<a
+  routerLink="/{{ product?.slug }}"
+  class="flex flex-col shadow border rounded-lg"
+  routerLinkActive="active"
+>
+  <img
+    src="{{ product?.img_url }}"
+    class="object-fit rounded-tr-lg rounded-tl-lg"
+  />
+  <div class="p-4 flex flex-col space-y-0">
+    <p class="text-lg font-semibold text-teal-500">{{ product?.title }}</p>
+    <p class="text-sm">Description: {{ product?.description }}</p>
+    <p class="font-semibold">PHP {{ product?.price }}</p>
+  </div>
+</a>

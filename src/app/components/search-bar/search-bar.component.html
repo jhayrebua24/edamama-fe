@@ -1,0 +1,13 @@
+<div class="w-full my-2 flex items-center justify-center">
+  <form (ngSubmit)="onSubmit()" class="border w-full max-w-lg flex mb-8">
+    <input
+      type="text"
+      (keydown)="onChange($event)"
+      class="border-0 px-2 flex-1 hover:outline-none"
+      placeholder="Search "
+    />
+    <button type="submit" class="text-white bg-teal-500 py-1 px-3 rounded">
+      Search
+    </button>
+  </form>
+</div>
